@@ -1,9 +1,55 @@
-<audio controls>
-  <source src="media/my_intro_audio.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Dynamic Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Current Year: <span id="current-year"></span></p>
+    <button id="themeToggle">Toggle Dark Mode</button>
+  </header>
 
-<video controls width="320" height="240">
-  <source src="media/my_project_video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+  <section id="about-me">
+    <h2>About Me</h2>
+    <img src="media/my_photo.jpg" alt="My Photo" class="profile-img" />
+    <p>Hello! I'm a web developer passionate about building engaging and interactive websites. Here's a sample of my work.</p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-buttons">
+      <button class="skill-btn" data-skill="HTML">HTML</button>
+      <button class="skill-btn" data-skill="CSS">CSS</button>
+      <button class="skill-btn" data-skill="JavaScript">JavaScript</button>
+    </div>
+    <p id="skill-description"></p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div id="projects-container" class="project-container"></div>
+  </section>
+
+  <section id="media">
+    <h2>My Media</h2>
+    <audio controls>
+      <source src="media/my_intro_audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <video controls width="320" height="240">
+      <source src="media/my_project_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="current-year-footer"></span> My Dynamic Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

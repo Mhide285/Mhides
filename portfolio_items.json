@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Responsive Portfolio Site",
+    "description": "A modern, responsive portfolio built with HTML, CSS, and JavaScript.",
+    "link": "https://example.com/project1"
+  },
+  {
+    "name": "Weather App",
+    "description": "A weather forecast app using JavaScript and API integration.",
+    "link": "https://example.com/project2"
+  },
+  {
+    "name": "Task Manager",
+    "description": "A simple to-do app with local storage support.",
+    "link": "https://example.com/project3"
+  }
+]
